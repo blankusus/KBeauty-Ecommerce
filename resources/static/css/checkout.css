@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F7;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space between "Korean Wave" and nav items */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional for better visual */
+}
+
+.header-text {
+    font-size: 28px; /* Adjust font size for better visibility */
+    color: #731C4F;
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+}
+.header-text a {
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: #731C4F; /* Ensure the text color stays consistent */
+    font-weight: bold;
+}
+
+.header-text a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+    color: #AF367F; /* Optional: Change color on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #AF367F;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto; /* Center Korean Wave */
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #AF367F;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(219, 163, 196, 0.6);
+    color: black;
+    text-align: center;
+    padding: 20px;
+
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Checkout Form */
+.checkout-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 1px; /* Increase padding for larger fields */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px; /* Increase font size */
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+.payment-methods input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font size */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DBA3C4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+#total-amount {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* Adjust based on your layout */
+}
+
+
+.user-info {
+    font-size: 18px;
+    color: #AF367F; /* Dark pink color */
+    font-weight: bold;
+    margin-right: 15px;
+    display: flex;
+    align-items: center; /* Align vertically */
+}
+
+.user-info strong {
+    color: #731C4F; /* Differentiate username color */
+}

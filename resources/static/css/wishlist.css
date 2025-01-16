@@ -1,0 +1,203 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffbfb;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space between "Korean Wave" and nav items */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional for better visual */
+}
+
+.header-text {
+    font-size: 28px; /* Adjust font size for better visibility */
+    color: #731C4F;
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+}
+.header-text a {
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: #731C4F; /* Ensure the text color stays consistent */
+    font-weight: bold;
+}
+
+.header-text a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+    color: #AF367F; /* Optional: Change color on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7BA8;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #AF367F;
+}
+
+.ah2 {
+    font-size: 22px;
+    color: #AF367F;
+    margin: 0 auto; /* Center Korean Wave */
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Page Title */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #AF367F;
+    font-size: 2rem;
+}
+
+/* Wishlist Container */
+.wishlist {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist p {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+/* Wishlist Item */
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+/* Product Details */
+.wishlist-item div {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.wishlist-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.wishlist-item p {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Remove Button */
+form button {
+    padding: 10px 15px;
+    background-color: #AF367F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #b64188;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    background-color: #9a326d;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(219, 163, 196, 0.6);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wishlist-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wishlist-item img {
+        margin-bottom: 10px;
+    }
+
+    .wishlist-item div {
+        margin-left: 0;
+    }
+
+    form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.user-info {
+    font-size: 18px;
+    color: #AF367F; /* Dark pink color */
+    font-weight: bold;
+    margin-right: 15px;
+    display: flex;
+    align-items: center; /* Align vertically */
+}
+
+.user-info strong {
+    color: #731C4F; /* Differentiate username color */
+}
